@@ -18,7 +18,7 @@ interface MediterraneanGeoMapProps {
 const HistoricalFundUse = ({ data }: HistoricalFundUseProps) => (
   <ResponsiveLine
       data={data}
-      margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+      margin={{ top: 100, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: 'point' }}
       yScale={{
           type: 'linear',
@@ -31,20 +31,20 @@ const HistoricalFundUse = ({ data }: HistoricalFundUseProps) => (
       axisTop={null}
       axisRight={null}
       axisBottom={{
-          tickSize: 5,
-          tickPadding: 5,
+          tickSize: 0,
+          tickPadding: 15,
           tickRotation: 0,
           legend: 'year',
-          legendOffset: 36,
+          legendOffset: 40,
           legendPosition: 'middle',
           truncateTickAt: 0
       }}
       axisLeft={{
-          tickSize: 5,
-          tickPadding: 5,
+          tickSize: 0,
+          tickPadding: 15,
           tickRotation: 0,
           legend: 'amount',
-          legendOffset: -40,
+          legendOffset: -50,
           legendPosition: 'middle',
           truncateTickAt: 0
       }}
@@ -62,11 +62,11 @@ const HistoricalFundUse = ({ data }: HistoricalFundUseProps) => (
       useMesh={true}
       legends={[
           {
-              anchor: 'bottom-right',
+              anchor: 'top',
               direction: 'column',
               justify: false,
-              translateX: 100,
-              translateY: 0,
+              translateX: -100,
+              translateY: -80,
               itemsSpacing: 0,
               itemDirection: 'left-to-right',
               itemWidth: 80,
@@ -192,12 +192,16 @@ const MediterraneanGeoMap = ({ features, data }: MediterraneanGeoMapProps) => (
 
 export default function Home() {
   return (
-    <main className='h-screen'>
-      <HistoricalFundUse data={lineData} />
-      <MediterraneanGeoMap 
-        features={features.features as Feature<Geometry, GeoJsonProperties>[]}
-        data={mapData}
-      />
+    <main className='h-screen w-screen'>
+      <article className='h-[50%] w-full my-32 px-16'>
+        <HistoricalFundUse data={lineData} />
+      </article>
+      {/* <article>
+        <MediterraneanGeoMap 
+          features={features.features as Feature<Geometry, GeoJsonProperties>[]}
+          data={mapData}
+        />
+      </article> */}
     </main>
   );
 }
