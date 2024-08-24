@@ -1,13 +1,20 @@
 "use client"
-import { ResponsiveLine } from '@nivo/line'
+import { ResponsiveBar, BarDatum } from '@nivo/bar'
+import { ResponsiveLine, Serie } from '@nivo/line'
 import { ResponsiveChoropleth } from '@nivo/geo'
 import { Feature, Geometry, GeoJsonProperties } from 'geojson';
 import lineData from './line_data.json'
+import barData from './bar_data.json'
 import features from './features.geo.json'
 import mapData from './map_data.json'
 
-interface HistoricalFundUseProps {
-  data: { id: string; data: { x: string; y: number }[] }[];
+
+interface RecoveryByMonthBarProps {
+  data: BarDatum[]
+}
+
+interface HistoricalFundUseLineProps {
+  data: Serie[]
 }
 
 interface MediterraneanGeoMapProps {
@@ -15,7 +22,129 @@ interface MediterraneanGeoMapProps {
   data: { id: string; value: number }[];
 }
 
-const HistoricalFundUse = ({ data }: HistoricalFundUseProps) => (
+
+const RecoveryByMonthBar = ({ data }: RecoveryByMonthBarProps) => (
+  <ResponsiveBar
+      data={data}
+      keys={[
+          'hot dog',
+          'burger',
+          'sandwich',
+          'kebab',
+          'fries',
+          'donut'
+      ]}
+      indexBy="country"
+      margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
+      padding={0.3}
+      valueScale={{ type: 'linear' }}
+      indexScale={{ type: 'band', round: true }}
+      colors={{ scheme: 'nivo' }}
+      defs={[
+          {
+              id: 'dots',
+              type: 'patternDots',
+              background: 'inherit',
+              color: '#38bcb2',
+              size: 4,
+              padding: 1,
+              stagger: true
+          },
+          {
+              id: 'lines',
+              type: 'patternLines',
+              background: 'inherit',
+              color: '#eed312',
+              rotation: -45,
+              lineWidth: 6,
+              spacing: 10
+          }
+      ]}
+      fill={[
+          {
+              match: {
+                  id: 'fries'
+              },
+              id: 'dots'
+          },
+          {
+              match: {
+                  id: 'sandwich'
+              },
+              id: 'lines'
+          }
+      ]}
+      borderColor={{
+          from: 'color',
+          modifiers: [
+              [
+                  'darker',
+                  1.6
+              ]
+          ]
+      }}
+      axisTop={null}
+      axisRight={null}
+      axisBottom={{
+          tickSize: 5,
+          tickPadding: 5,
+          tickRotation: 0,
+          legend: 'country',
+          legendPosition: 'middle',
+          legendOffset: 32,
+          truncateTickAt: 0
+      }}
+      axisLeft={{
+          tickSize: 5,
+          tickPadding: 5,
+          tickRotation: 0,
+          legend: 'food',
+          legendPosition: 'middle',
+          legendOffset: -40,
+          truncateTickAt: 0
+      }}
+      labelSkipWidth={12}
+      labelSkipHeight={12}
+      labelTextColor={{
+          from: 'color',
+          modifiers: [
+              [
+                  'darker',
+                  1.6
+              ]
+          ]
+      }}
+      legends={[
+          {
+              dataFrom: 'keys',
+              anchor: 'bottom-right',
+              direction: 'column',
+              justify: false,
+              translateX: 120,
+              translateY: 0,
+              itemsSpacing: 2,
+              itemWidth: 100,
+              itemHeight: 20,
+              itemDirection: 'left-to-right',
+              itemOpacity: 0.85,
+              symbolSize: 20,
+              effects: [
+                  {
+                      on: 'hover',
+                      style: {
+                          itemOpacity: 1
+                      }
+                  }
+              ]
+          }
+      ]}
+      role="application"
+      ariaLabel="Nivo bar chart demo"
+      barAriaLabel={e=>e.id+": "+e.formattedValue+" in country: "+e.indexValue}
+  />
+)
+
+const HistoricalFundUseLine = ({ data }: HistoricalFundUseLineProps) => (
   <ResponsiveLine
       data={data}
       margin={{ top: 100, right: 110, bottom: 50, left: 60 }}
@@ -194,7 +323,10 @@ export default function Home() {
   return (
     <main className='h-screen w-screen'>
       <article className='h-[50%] w-full my-32 px-16'>
-        <HistoricalFundUse data={lineData} />
+        <RecoveryByMonthBar data={barData} />
+      </article>
+      <article className='h-[50%] w-full my-32 px-16'>
+        <HistoricalFundUseLine data={lineData} />
       </article>
       {/* <article>
         <MediterraneanGeoMap 
