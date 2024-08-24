@@ -27,19 +27,17 @@ const RecoveryByMonthBar = ({ data }: RecoveryByMonthBarProps) => (
   <ResponsiveBar
       data={data}
       keys={[
-          'hot dog',
-          'burger',
-          'sandwich',
-          'kebab',
-          'fries',
-          'donut'
+          'Fishing For Litter',
+          'Prevention',
+          'Beach',
+          'Diving'
       ]}
-      indexBy="country"
+      indexBy="month"
       margin={{ top: 50, right: 130, bottom: 50, left: 60 }}
       padding={0.3}
       valueScale={{ type: 'linear' }}
       indexScale={{ type: 'band', round: true }}
-      colors={{ scheme: 'nivo' }}
+      colors={{ scheme: 'paired' }}
       defs={[
           {
               id: 'dots',
@@ -89,7 +87,7 @@ const RecoveryByMonthBar = ({ data }: RecoveryByMonthBarProps) => (
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'country',
+          legend: 'month',
           legendPosition: 'middle',
           legendOffset: 32,
           truncateTickAt: 0
@@ -98,9 +96,9 @@ const RecoveryByMonthBar = ({ data }: RecoveryByMonthBarProps) => (
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'food',
+          legend: 'kilos',
           legendPosition: 'middle',
-          legendOffset: -40,
+          legendOffset: -55,
           truncateTickAt: 0
       }}
       labelSkipWidth={12}
@@ -217,7 +215,6 @@ const HistoricalFundUseLine = ({ data }: HistoricalFundUseLineProps) => (
       ]}
   />
 )
-
 
 const MediterraneanGeoMap = ({ features, data }: MediterraneanGeoMapProps) => (
   <ResponsiveChoropleth
