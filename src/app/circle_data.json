@@ -1,419 +1,272 @@
 {
-  "name": "nivo",
+  "name": "2024",
   "color": "hsl(292, 70%, 50%)",
   "children": [
     {
-      "name": "viz",
+      "name": "Fishing for Litter",
       "color": "hsl(174, 70%, 50%)",
       "children": [
         {
-          "name": "stack",
-          "color": "hsl(211, 70%, 50%)",
-          "children": [
-            {
-              "name": "cchart",
-              "color": "hsl(90, 70%, 50%)",
-              "loc": 166917
-            },
-            {
-              "name": "xAxis",
-              "color": "hsl(24, 70%, 50%)",
-              "loc": 44051
-            },
-            {
-              "name": "yAxis",
-              "color": "hsl(115, 70%, 50%)",
-              "loc": 179333
-            },
-            {
-              "name": "layers",
-              "color": "hsl(73, 70%, 50%)",
-              "loc": 143528
-            }
-          ]
+          "name": "ΜΗΧΑΝΙΩΝΑ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 24760
         },
         {
-          "name": "ppie",
-          "color": "hsl(23, 70%, 50%)",
-          "children": [
-            {
-              "name": "chart",
-              "color": "hsl(22, 70%, 50%)",
-              "children": [
-                {
-                  "name": "pie",
-                  "color": "hsl(225, 70%, 50%)",
-                  "children": [
-                    {
-                      "name": "outline",
-                      "color": "hsl(275, 70%, 50%)",
-                      "loc": 78773
-                    },
-                    {
-                      "name": "slices",
-                      "color": "hsl(103, 70%, 50%)",
-                      "loc": 70843
-                    },
-                    {
-                      "name": "bbox",
-                      "color": "hsl(48, 70%, 50%)",
-                      "loc": 169973
-                    }
-                  ]
-                },
-                {
-                  "name": "donut",
-                  "color": "hsl(276, 70%, 50%)",
-                  "loc": 184826
-                },
-                {
-                  "name": "gauge",
-                  "color": "hsl(208, 70%, 50%)",
-                  "loc": 192560
-                }
-              ]
-            },
-            {
-              "name": "legends",
-              "color": "hsl(253, 70%, 50%)",
-              "loc": 16458
-            }
-          ]
-        }
+          "name": "ΜΟΥΔΑΝΙΑ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 925
+        },
+        {
+          "name": "ΠΟΡΤΟ ΚΟΥΦΟ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 5540
+        },
+        {
+          "name": "ΚΕΡΑΤΣΙΝΙ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 18720
+        },
+        {
+          "name": "ΚΕΡΚΥΡΑ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 7105
+        },
+        {
+          "name": "ΚΥΛΛΗΝΗ",
+          "color": "hsl(90, 70%, 50%)",
+          "loc": 8500
+        },
+        {
+          "name": "ΧΑΝΙΑ",
+          "color": "hsl(24, 70%, 50%)",
+          "loc": 983
+        },
+        {
+          "name": "ΑΓΙΟΣ ΝΙΚΟΛΑΟΣ",
+          "color": "hsl(115, 70%, 50%)",
+          "loc": 1380
+        },
+        {
+          "name": "ΚΑΛΥΜΝΟΣ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 7945
+        },
+        {
+          "name": "ΗΡΑΚΛΕΙΟ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 1280
+        },
+        {
+          "name": "ΧΑΛΚΙΔΑ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 5170
+        },
+        {
+          "name": "ΚΥΜΗ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 4955
+        },
+        {
+          "name": "ΠΑΤΡΑ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 3680
+        },
+        {
+          "name": "ΗΓΟΥΜΕΝΙΤΣΑ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 350
+        },
+        {
+          "name": "ΑΣΤΥΠΑΛΑΙΑ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 650
+        },
+        {
+          "name": "ΚΕΦΑΛΟΝΙΑ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 15
+        },
+        {
+          "name": "ΑΜΟΡΓΟΣ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 1000
+        },
+        {
+          "name": "ΠΡΕΒΕΖΑ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 7000
+        },
+        {
+          "name": "ΑΝΔΡΟΣ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 2780
+        },
+        {
+          "name": "ΒΟΛΟΣ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 700
+        },
+        {
+          "name": "ΚΑΡΥΣΤΟΣ",
+          "color": "hsl(73, 70%, 50%)",
+          "loc": 1048
+        } 
       ]
     },
     {
-      "name": "colors",
+      "name": "Prevention",
       "color": "hsl(82, 70%, 50%)",
       "children": [
         {
-          "name": "rgb",
+          "name": "ΜΗΧΑΝΙΩΝΑ",
           "color": "hsl(246, 70%, 50%)",
-          "loc": 4467
+          "loc": 525
         },
         {
-          "name": "hsl",
+          "name": "ΚΕΡΑΤΣΙΝΙ",
           "color": "hsl(59, 70%, 50%)",
-          "loc": 130114
+          "loc": 7001
+        },
+        {
+          "name": "ΛΑΥΡΙΟ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 11580
+        },{
+          "name": "ΧΑΝΙΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 1820
+        },
+        {
+          "name": "ΧΑΛΚΙΔΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 2090
+        },
+        {
+          "name": "ΠΑΤΡΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 299
+        },
+        {
+          "name": "ΣΑΛΑΜΙΝΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 2650
+        },
+        {
+          "name": "ΚΑΒΑΛΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 4950
+        },
+        {
+          "name": "ΑΜΟΡΓΟΣ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 2080
+        },
+        {
+          "name": "ΚΕΦΑΛΟΝΙΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 550
+        },
+        {
+          "name": "ΣΑΜΟΣ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 1050
+        },
+        {
+          "name": "ΒΑΡΚΙΖΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 1700
+        },
+        {
+          "name": "ΝΕΑ ΚΙΟΣ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 600
+        },
+        {
+          "name": "ΑΣΤΑΚΟΣ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 500
+        },
+        {
+          "name": "ΒΟΝΙΤΣΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 1000
+        },
+        {
+          "name": "ΚΥΘΝΟΣ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 2130
+        },
+        {
+          "name": "ΥΔΡΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 700
+        },
+        {
+          "name": "ΣΠΕΤΣΕΣ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 500
+        },
+        {
+          "name": "ΚΟΙΛΑΔΑ",
+          "color": "hsl(59, 70%, 50%)",
+          "loc": 3600
         }
       ]
     },
     {
-      "name": "utils",
+      "name": "Diving",
       "color": "hsl(202, 70%, 50%)",
       "children": [
         {
-          "name": "randomize",
+          "name": "ΜΗΧΑΝΙΩΝΑ",
           "color": "hsl(272, 70%, 50%)",
-          "loc": 158695
+          "loc": 4190
         },
         {
-          "name": "resetClock",
+          "name": "ΗΓΟΥΜΕΝΙΤΣΑ",
           "color": "hsl(81, 70%, 50%)",
-          "loc": 83957
+          "loc": 8300
         },
         {
-          "name": "noop",
+          "name": "ΛΑΥΡΙΟ",
           "color": "hsl(35, 70%, 50%)",
-          "loc": 192314
+          "loc": 34170
         },
         {
-          "name": "tick",
+          "name": "ΒΟΝΙΤΣΑ",
           "color": "hsl(237, 70%, 50%)",
-          "loc": 19400
+          "loc": 2430
         },
         {
-          "name": "forceGC",
+          "name": "ΜΟΥΔΑΝΙΑ",
           "color": "hsl(49, 70%, 50%)",
-          "loc": 54416
+          "loc": 5460
         },
         {
-          "name": "stackTrace",
+          "name": "ΣΥΜΗ",
           "color": "hsl(237, 70%, 50%)",
-          "loc": 132147
+          "loc": 10060
         },
         {
-          "name": "dbg",
+          "name": "ΠΟΡΤΟ ΚΟΥΦΟ",
           "color": "hsl(83, 70%, 50%)",
-          "loc": 42348
+          "loc": 2160
         }
       ]
     },
     {
-      "name": "generators",
+      "name": "Beach",
       "color": "hsl(310, 70%, 50%)",
       "children": [
         {
-          "name": "address",
+          "name": "ΒΟΛΟΣ",
           "color": "hsl(24, 70%, 50%)",
-          "loc": 34857
+          "loc": 2100
         },
         {
-          "name": "city",
+          "name": "ΜΗΧΑΝΙΩΝΑ",
           "color": "hsl(263, 70%, 50%)",
-          "loc": 149745
-        },
-        {
-          "name": "animal",
-          "color": "hsl(96, 70%, 50%)",
-          "loc": 131964
-        },
-        {
-          "name": "movie",
-          "color": "hsl(161, 70%, 50%)",
-          "loc": 63152
-        },
-        {
-          "name": "user",
-          "color": "hsl(50, 70%, 50%)",
-          "loc": 26358
-        }
-      ]
-    },
-    {
-      "name": "set",
-      "color": "hsl(115, 70%, 50%)",
-      "children": [
-        {
-          "name": "clone",
-          "color": "hsl(168, 70%, 50%)",
-          "loc": 140293
-        },
-        {
-          "name": "intersect",
-          "color": "hsl(268, 70%, 50%)",
-          "loc": 78521
-        },
-        {
-          "name": "merge",
-          "color": "hsl(28, 70%, 50%)",
-          "loc": 72067
-        },
-        {
-          "name": "reverse",
-          "color": "hsl(356, 70%, 50%)",
-          "loc": 62881
-        },
-        {
-          "name": "toArray",
-          "color": "hsl(98, 70%, 50%)",
-          "loc": 197201
-        },
-        {
-          "name": "toObject",
-          "color": "hsl(42, 70%, 50%)",
-          "loc": 121723
-        },
-        {
-          "name": "fromCSV",
-          "color": "hsl(162, 70%, 50%)",
-          "loc": 140914
-        },
-        {
-          "name": "slice",
-          "color": "hsl(320, 70%, 50%)",
-          "loc": 41063
-        },
-        {
-          "name": "append",
-          "color": "hsl(279, 70%, 50%)",
-          "loc": 19957
-        },
-        {
-          "name": "prepend",
-          "color": "hsl(182, 70%, 50%)",
-          "loc": 98265
-        },
-        {
-          "name": "shuffle",
-          "color": "hsl(218, 70%, 50%)",
-          "loc": 38210
-        },
-        {
-          "name": "pick",
-          "color": "hsl(96, 70%, 50%)",
-          "loc": 89475
-        },
-        {
-          "name": "plouc",
-          "color": "hsl(187, 70%, 50%)",
-          "loc": 124517
-        }
-      ]
-    },
-    {
-      "name": "text",
-      "color": "hsl(229, 70%, 50%)",
-      "children": [
-        {
-          "name": "trim",
-          "color": "hsl(192, 70%, 50%)",
-          "loc": 164005
-        },
-        {
-          "name": "slugify",
-          "color": "hsl(358, 70%, 50%)",
-          "loc": 48981
-        },
-        {
-          "name": "snakeCase",
-          "color": "hsl(123, 70%, 50%)",
-          "loc": 57620
-        },
-        {
-          "name": "camelCase",
-          "color": "hsl(126, 70%, 50%)",
-          "loc": 173115
-        },
-        {
-          "name": "repeat",
-          "color": "hsl(137, 70%, 50%)",
-          "loc": 49018
-        },
-        {
-          "name": "padLeft",
-          "color": "hsl(202, 70%, 50%)",
-          "loc": 55754
-        },
-        {
-          "name": "padRight",
-          "color": "hsl(311, 70%, 50%)",
-          "loc": 85778
-        },
-        {
-          "name": "sanitize",
-          "color": "hsl(303, 70%, 50%)",
-          "loc": 160843
-        },
-        {
-          "name": "ploucify",
-          "color": "hsl(353, 70%, 50%)",
-          "loc": 12938
-        }
-      ]
-    },
-    {
-      "name": "misc",
-      "color": "hsl(324, 70%, 50%)",
-      "children": [
-        {
-          "name": "greetings",
-          "color": "hsl(251, 70%, 50%)",
-          "children": [
-            {
-              "name": "hey",
-              "color": "hsl(92, 70%, 50%)",
-              "loc": 128178
-            },
-            {
-              "name": "HOWDY",
-              "color": "hsl(59, 70%, 50%)",
-              "loc": 106165
-            },
-            {
-              "name": "aloha",
-              "color": "hsl(241, 70%, 50%)",
-              "loc": 35994
-            },
-            {
-              "name": "AHOY",
-              "color": "hsl(323, 70%, 50%)",
-              "loc": 11016
-            }
-          ]
-        },
-        {
-          "name": "other",
-          "color": "hsl(46, 70%, 50%)",
-          "loc": 76932
-        },
-        {
-          "name": "path",
-          "color": "hsl(354, 70%, 50%)",
-          "children": [
-            {
-              "name": "pathA",
-              "color": "hsl(355, 70%, 50%)",
-              "loc": 173587
-            },
-            {
-              "name": "pathB",
-              "color": "hsl(267, 70%, 50%)",
-              "children": [
-                {
-                  "name": "pathB1",
-                  "color": "hsl(333, 70%, 50%)",
-                  "loc": 129441
-                },
-                {
-                  "name": "pathB2",
-                  "color": "hsl(315, 70%, 50%)",
-                  "loc": 148968
-                },
-                {
-                  "name": "pathB3",
-                  "color": "hsl(210, 70%, 50%)",
-                  "loc": 57562
-                },
-                {
-                  "name": "pathB4",
-                  "color": "hsl(341, 70%, 50%)",
-                  "loc": 125439
-                }
-              ]
-            },
-            {
-              "name": "pathC",
-              "color": "hsl(146, 70%, 50%)",
-              "children": [
-                {
-                  "name": "pathC1",
-                  "color": "hsl(288, 70%, 50%)",
-                  "loc": 63334
-                },
-                {
-                  "name": "pathC2",
-                  "color": "hsl(55, 70%, 50%)",
-                  "loc": 197050
-                },
-                {
-                  "name": "pathC3",
-                  "color": "hsl(128, 70%, 50%)",
-                  "loc": 136606
-                },
-                {
-                  "name": "pathC4",
-                  "color": "hsl(231, 70%, 50%)",
-                  "loc": 145885
-                },
-                {
-                  "name": "pathC5",
-                  "color": "hsl(314, 70%, 50%)",
-                  "loc": 38013
-                },
-                {
-                  "name": "pathC6",
-                  "color": "hsl(85, 70%, 50%)",
-                  "loc": 122255
-                },
-                {
-                  "name": "pathC7",
-                  "color": "hsl(245, 70%, 50%)",
-                  "loc": 105255
-                },
-                {
-                  "name": "pathC8",
-                  "color": "hsl(271, 70%, 50%)",
-                  "loc": 127319
-                },
-                {
-                  "name": "pathC9",
-                  "color": "hsl(121, 70%, 50%)",
-                  "loc": 46311
-                }
-              ]
-            }
-          ]
+          "loc": 2040
         }
       ]
     }

@@ -48,7 +48,7 @@ const RecoveryByPortCirclePack = ({ data }: RecoveryByPortCirclePackProps) => (
       margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
       id="name"
       value="loc"
-      colors={{ scheme: 'blues' }}
+      colors={{ scheme: 'paired' }}
       childColor={{
           from: 'color',
           modifiers: [
