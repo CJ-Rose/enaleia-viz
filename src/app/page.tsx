@@ -7,8 +7,8 @@ import { Feature, Geometry, GeoJsonProperties } from 'geojson';
 import barData from './bar_data.json'
 import circleData from './circle_data.json'
 import lineData from './line_data.json'
-import features from './features.geo.json'
 import mapData from './map_data.json'
+import features from './med.geo.json'
 
 
 interface RecoveryByMonthBarProps {
@@ -402,12 +402,12 @@ export default function Home() {
       <article className='h-[400px] w-full my-32 px-16'>
         <HistoricalFundUseLine data={lineData} />
       </article>
-      {/* <article>
+      <article className='h-[800px] w-[800px]'>
         <MediterraneanGeoMap 
           features={features.features as Feature<Geometry, GeoJsonProperties>[]}
           data={mapData}
         />
-      </article> */}
+      </article>
     </main>
   );
 }
