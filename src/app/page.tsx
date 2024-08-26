@@ -1,16 +1,36 @@
 "use client"
 import { ResponsiveBar, BarDatum } from '@nivo/bar'
 import { ResponsiveLine, Serie } from '@nivo/line'
+import { ResponsiveCirclePacking, CircleProps } from '@nivo/circle-packing'
 import { ResponsiveChoropleth } from '@nivo/geo'
 import { Feature, Geometry, GeoJsonProperties } from 'geojson';
-import lineData from './line_data.json'
 import barData from './bar_data.json'
+import circleData from './circle_data.json'
+import lineData from './line_data.json'
 import features from './features.geo.json'
 import mapData from './map_data.json'
 
 
 interface RecoveryByMonthBarProps {
   data: BarDatum[]
+}
+
+interface CircleNode {
+  name: string;
+  color: string;
+  children?: CircleNode[];
+}
+
+interface RecoveryByPortCirclePackProps {
+  data: CircleNode;
+  // data: {
+  //   root: any; // Adjust according to the actual expected structure
+  //   id: string;
+  //   value: string;
+  //   width: number;
+  //   height: number;
+  //   // Add other required properties as per CirclePackingSvgProps
+  // }[]
 }
 
 interface HistoricalFundUseLineProps {
@@ -21,6 +41,67 @@ interface MediterraneanGeoMapProps {
   features: Feature[];
   data: { id: string; value: number }[];
 }
+
+const RecoveryByPortCirclePack = ({ data }: RecoveryByPortCirclePackProps) => (
+  <ResponsiveCirclePacking
+      data={data}
+      margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
+      id="name"
+      value="loc"
+      colors={{ scheme: 'blues' }}
+      childColor={{
+          from: 'color',
+          modifiers: [
+              [
+                  'brighter',
+                  0.4
+              ]
+          ]
+      }}
+      padding={4}
+      enableLabels={true}
+      labelsFilter={n=>2===n.node.depth}
+      labelsSkipRadius={10}
+      labelTextColor={{
+          from: 'color',
+          modifiers: [
+              [
+                  'darker',
+                  2
+              ]
+          ]
+      }}
+      borderWidth={1}
+      borderColor={{
+          from: 'color',
+          modifiers: [
+              [
+                  'darker',
+                  0.5
+              ]
+          ]
+      }}
+      defs={[
+          {
+              id: 'lines',
+              type: 'patternLines',
+              background: 'none',
+              color: 'inherit',
+              rotation: -45,
+              lineWidth: 5,
+              spacing: 8
+          }
+      ]}
+      fill={[
+          {
+              match: {
+                  depth: 1
+              },
+              id: 'lines'
+          }
+      ]}
+  />
+)
 
 
 const RecoveryByMonthBar = ({ data }: RecoveryByMonthBarProps) => (
@@ -321,6 +402,9 @@ export default function Home() {
     <main className='h-screen w-screen'>
       <article className='h-[50%] w-full my-32 px-16'>
         <RecoveryByMonthBar data={barData} />
+      </article>
+      <article className='h-[50%] w-full my-32 px-16'>
+        <RecoveryByPortCirclePack data={circleData} />
       </article>
       <article className='h-[50%] w-full my-32 px-16'>
         <HistoricalFundUseLine data={lineData} />
