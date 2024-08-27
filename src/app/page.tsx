@@ -1,4 +1,5 @@
 "use client"
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import { ResponsiveBar, BarDatum } from '@nivo/bar'
 import { ResponsiveLine, Serie } from '@nivo/line'
 import { ResponsiveCirclePacking } from '@nivo/circle-packing'
@@ -9,6 +10,7 @@ import circleData from './circle_data.json'
 import lineData from './line_data.json'
 import mapData from './map_data.json'
 import features from './med.geo.json'
+import 'leaflet/dist/leaflet.css';
 
 
 interface RecoveryByMonthBarProps {
@@ -389,6 +391,21 @@ const MediterraneanGeoMap = ({ features, data }: MediterraneanGeoMapProps) => (
   />
 )
 
+const LeafletMap = () => (
+  <MapContainer className='h-full' center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
+    <TileLayer
+      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    />
+    <Marker position={[51.505, -0.09]}>
+      <Popup>
+        A pretty CSS3 popup. <br /> Easily customizable.
+      </Popup>
+    </Marker>
+  </MapContainer>
+)
+
+
 
 export default function Home() {
   return (
@@ -402,12 +419,18 @@ export default function Home() {
       <article className='h-[400px] w-full my-32 px-16'>
         <HistoricalFundUseLine data={lineData} />
       </article>
-      <article className='h-[800px] w-[800px]'>
+      <article className='h-[400px] w-[1200px] my-32 px-16'>
+        <LeafletMap />
+      </article>
+
+      
+
+      {/* <article className='h-[800px] w-[800px]'>
         <MediterraneanGeoMap 
           features={features.features as Feature<Geometry, GeoJsonProperties>[]}
           data={mapData}
         />
-      </article>
+      </article> */}
     </main>
   );
 }
