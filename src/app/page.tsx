@@ -392,14 +392,19 @@ const MediterraneanGeoMap = ({ features, data }: MediterraneanGeoMapProps) => (
 )
 
 const LeafletMap = () => (
-  <MapContainer className='h-full' center={[51.505, -0.09]} zoom={13} scrollWheelZoom={true}>
+  <MapContainer className='h-full' center={[37.308316, 22.751713]} zoom={5} scrollWheelZoom={true}>
     <TileLayer
       attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     />
-    <Marker position={[51.505, -0.09]}>
+    <Marker position={[37.986221, 23.567896]}>
       <Popup>
-        A pretty CSS3 popup. <br /> Easily customizable.
+        Pireous
+      </Popup>
+    </Marker>
+    <Marker position={[36.590137, 22.379222]}>
+      <Popup>
+      Messiniakos Kolpos
       </Popup>
     </Marker>
   </MapContainer>
@@ -419,11 +424,9 @@ export default function Home() {
       <article className='h-[400px] w-full my-32 px-16'>
         <HistoricalFundUseLine data={lineData} />
       </article>
-      <article className='h-[400px] w-[1200px] my-32 px-16'>
+      <article className='h-[400px] w-[900px] m-auto'>
         <LeafletMap />
       </article>
-
-      
 
       {/* <article className='h-[800px] w-[800px]'>
         <MediterraneanGeoMap 
