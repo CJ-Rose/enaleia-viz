@@ -397,29 +397,33 @@ const MediterraneanGeoMap = ({ features, data }: MediterraneanGeoMapProps) => (
 
 const LeafletMap = () => {
   const mapRef = useRef(null)
-  const customIcon = new Icon({
-    iconUrl: 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="blue" stroke="blue" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>'),
-    iconSize: [24, 24], // Size of the icon
-    iconAnchor: [12, 24], // Point of the icon which will correspond to marker's location
-    popupAnchor: [0, -24] // Point from which the popup should open relative to the iconAnchor
-  });
-
   return (
-    <MapContainer className='h-full' center={[38.32217739504656, 23.952204640936014]} zoom={6} scrollWheelZoom={true}>
+    <MapContainer className='h-full' center={[38.32217739504656, 23.952204640936014]} zoom={7} scrollWheelZoom={true}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {leafletData.map(location => (
-        <Marker position={[location.latitude, location.longitude]} icon={customIcon}>
-        <Popup>
-          <div>
-            <div>{location.name}</div>
-            <div>{location.category}: {location.kg}kg</div>
-          </div>  
-        </Popup>
-      </Marker>
-      ))}
+      {leafletData.map(location => {
+        const customIcon = new Icon({
+          iconUrl: 'data:image/svg+xml,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="${location.color}"><circle cx="5" cy="5" r="5"></circle></svg>`),
+          iconSize: [12, 12], 
+          // iconAnchor: [5, 5], // Point of the icon which will correspond to marker's location
+          // popupAnchor: [0, -5] // Point from which the popup should open relative to the iconAnchor
+        });
+        return (
+          <Marker key={location.name} position={[location.latitude, location.longitude]} icon={customIcon}>
+            <Popup>
+              <div>
+                <div>{location.name}</div>
+                <div className='flex gap-1 items-center'>
+                <div className='h-3 w-3' style={{ backgroundColor: `${location.color}` }}></div>
+                  <div>{location.category}: {location.kg}kg</div>
+                </div>
+              </div>  
+            </Popup>
+          </Marker>
+        )
+      })}
     </MapContainer>
   )
 }
