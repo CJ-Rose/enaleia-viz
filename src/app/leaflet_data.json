@@ -1,0 +1,394 @@
+[
+  {
+    "name": "ΜΗΧΑΝΙΩΝΑ",
+    "latitude": 40.46614880219318,
+    "longitude": 22.8545901825901,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 24760
+  },
+  {
+    "name": "ΜΟΥΔΑΝΙΑ",
+    "latitude": 40.23954649913149,
+    "longitude": 23.279096048233473,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 925
+  },
+  {
+    "name": "ΠΟΡΤΟ ΚΟΥΦΟ",
+    "latitude": 39.971015364992695,
+    "longitude": 23.91760015021697,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 5540
+  },
+  {
+    "name": "ΚΕΡΑΤΣΙΝΙ",
+    "latitude": 37.95977990970762,
+    "longitude": 23.60790881559715,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 18720
+  },
+  {
+    "name": "ΚΕΡΚΥΡΑ",
+    "latitude": 39.62747648666418,
+    "longitude": 19.90624965817071,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 7105
+  },
+  {
+    "name": "ΚΥΛΛΗΝΗ",
+    "latitude": 37.93724142624388,
+    "longitude": 21.147712118664355,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 8500
+  },
+  {
+    "name": "ΧΑΝΙΑ",
+    "latitude": 35.51865015628125,
+    "longitude": 24.018592718415473,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 983
+  },
+  {
+    "name": "ΑΓΙΟΣ ΝΙΚΟΛΑΟΣ",
+    "latitude": 35.18687763666635,
+    "longitude": 25.716497938394546,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 1380
+  },
+  {
+    "name": "ΚΑΛΥΜΝΟΣ",
+    "latitude": 36.94675222414254,
+    "longitude": 26.9845007822738,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 7945
+  },
+  {
+    "name": "ΗΡΑΚΛΕΙΟ",
+    "latitude": 35.3434284566139,
+    "longitude": 25.14246576087459,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 1280
+  },
+  {
+    "name": "ΧΑΛΚΙΔΑ",
+    "latitude": 38.472481832611216,
+    "longitude": 23.611513295709265,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 5170
+  },
+  {
+    "name": "ΚΥΜΗ",
+    "latitude": 38.63068422716857,
+    "longitude": 24.12366162751605,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 4955
+  },
+  {
+    "name": "ΠΑΤΡΑ",
+    "latitude": 38.23258477799047,
+    "longitude": 21.721309485280024,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 3680
+  },
+  {
+    "name": "ΗΓΟΥΜΕΝΙΤΣΑ",
+    "latitude": 39.491201433596345,
+    "longitude": 20.257672641933194,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 350
+  },
+  {
+    "name": "ΑΣΤΥΠΑΛΑΙΑ",
+    "latitude": 36.54722086850505,
+    "longitude": 26.355454687476822,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 650
+  },
+  {
+    "name": "ΚΕΦΑΛΟΝΙΑ",
+    "latitude": 38.20095400656163,
+    "longitude": 20.442970013708088,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 15
+  },
+  {
+    "name": "ΑΜΟΡΓΟΣ",
+    "latitude": 36.82978906934533,
+    "longitude": 25.865952735835503,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 1000
+  },
+  {
+    "name": "ΠΡΕΒΕΖΑ",
+    "latitude": 38.96026350557748,
+    "longitude": 20.755274137418237,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 7000
+  },
+  {
+    "name": "ΑΝΔΡΟΣ",
+    "latitude": 37.838848742959165,
+    "longitude": 24.937208160099665,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 2780
+  },
+  {
+    "name": "ΒΟΛΟΣ",
+    "latitude": 39.359480083140745,
+    "longitude": 22.944682403839764,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 700
+  },
+  {
+    "name": "ΚΑΡΥΣΤΟΣ",
+    "latitude": 38.01307521942295,
+    "longitude": 24.419113626679977,
+    "category": "Fishing for Litter",
+    "color": "#a6cee3",
+    "kg": 1048
+  },
+  {
+    "name": "ΜΗΧΑΝΙΩΝΑ",
+    "latitude": 40.45884687581516,
+    "longitude": 22.85985468698241,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 525
+  },
+  {
+    "name": "ΚΕΡΑΤΣΙΝΙ",
+    "latitude": 37.95077170815231,
+    "longitude": 23.607236802383284,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 7001
+  },
+  {
+    "name": "ΛΑΥΡΙΟ",
+    "latitude": 37.712246549544474,
+    "longitude": 24.055911094901795,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 11580
+  },
+  {
+    "name": "ΧΑΝΙΑ",
+    "latitude": 35.518503270959485,
+    "longitude": 24.021772924041464,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 1820
+  },
+  {
+    "name": "ΧΑΛΚΙΔΑ",
+    "latitude": 38.47402977591779,
+    "longitude": 23.621913643114198,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 2090
+  },
+  {
+    "name": "ΠΑΤΡΑ",
+    "latitude": 38.22891495984547,
+    "longitude": 21.721539700409895,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 299
+  },
+  {
+    "name": "ΣΑΛΑΜΙΝΑ",
+    "latitude": 37.96238060360595,
+    "longitude": 23.491569103029516,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 2650
+  },
+  {
+    "name": "ΚΑΒΑΛΑ",
+    "latitude": 40.93375139256846,
+    "longitude": 24.406376643387386,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 4950
+  },
+  {
+    "name": "ΑΜΟΡΓΟΣ",
+    "latitude": 36.8313818820437,
+    "longitude": 25.8620147477712,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 2080
+  },
+  {
+    "name": "ΚΕΦΑΛΟΝΙΑ",
+    "latitude": 38.205914040815415,
+    "longitude": 20.43964521982796,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 550
+  },
+  {
+    "name": "ΣΑΜΟΣ",
+    "latitude": 37.752288012318346,
+    "longitude": 26.960092022102714,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 1050
+  },
+  {
+    "name": "ΒΑΡΚΙΖΑ",
+    "latitude": 37.81666472020753,
+    "longitude": 23.801770408926448,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 1700
+  },
+  {
+    "name": "ΝΕΑ ΚΙΟΣ",
+    "latitude": 37.58406235010875,
+    "longitude": 22.746694366190873,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 600
+  },
+  {
+    "name": "ΑΣΤΑΚΟΣ",
+    "latitude": 38.53364745701822,
+    "longitude": 21.081418013650772,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 500
+  },
+  {
+    "name": "ΒΟΝΙΤΣΑ",
+    "latitude": 38.92130847269666,
+    "longitude": 20.894010245287006,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 1000
+  },
+  {
+    "name": "ΚΥΘΝΟΣ",
+    "latitude": 37.38970202118642,
+    "longitude": 24.397907731648736,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 2130
+  },
+  {
+    "name": "ΥΔΡΑ",
+    "latitude": 37.35030292134663,
+    "longitude": 23.4652459182793,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 700
+  },
+  {
+    "name": "ΣΠΕΤΣΕΣ",
+    "latitude": 37.269201231399265,
+    "longitude": 23.156763857242673,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 500
+  },
+  {
+    "name": "ΚΟΙΛΑΔΑ",
+    "latitude": 37.41722477408152,
+    "longitude": 23.12731074629627,
+    "category": "Prevention",
+    "color": "#1f78b4",
+    "kg": 3600
+  },
+  {
+    "name": "ΜΗΧΑΝΙΩΝΑ",
+    "latitude": 40.45405760586731,
+    "longitude": 22.829250135650575,
+    "category": "Diving",
+    "color": "#33a02c",
+    "kg": 4190
+  },
+  {
+    "name": "ΗΓΟΥΜΕΝΙΤΣΑ",
+    "latitude": 39.50448244129687,
+    "longitude": 20.241998008268602,
+    "category": "Diving",
+    "color": "#33a02c",
+    "kg": 8300
+  },
+  {
+    "name": "ΛΑΥΡΙΟ",
+    "latitude": 37.70728002417866,
+    "longitude": 24.069514114128147,
+    "category": "Diving",
+    "color": "#33a02c",
+    "kg": 34170
+  },
+  {
+    "name": "ΒΟΝΙΤΣΑ",
+    "latitude": 38.929374871131905,
+    "longitude": 20.886727267695303,
+    "category": "Diving",
+    "color": "#33a02c",
+    "kg": 2430
+  },
+  {
+    "name": "ΜΟΥΔΑΝΙΑ",
+    "latitude": 40.236102293257446,
+    "longitude": 23.278453861492004,
+    "category": "Diving",
+    "color": "#33a02c",
+    "kg": 5460
+  },
+  {
+    "name": "ΣΥΜΗ",
+    "latitude": 36.622342305955705,
+    "longitude": 27.841942476140886,
+    "category": "Diving",
+    "color": "#33a02c",
+    "kg": 10060
+  },
+  {
+    "name": "ΠΟΡΤΟ ΚΟΥΦΟ",
+    "latitude": 39.96444201654768,
+    "longitude": 23.922022590295914,
+    "category": "Diving",
+    "color": "#33a02c",
+    "kg": 2160
+  },
+  {
+    "name": "ΒΟΛΟΣ",
+    "latitude": 39.35095304477114,
+    "longitude": 22.96288236014163,
+    "category": "Beach",
+    "color": "#b2df8a",
+    "kg": 2100
+  },
+  {
+    "name": "ΜΗΧΑΝΙΩΝΑ",
+    "latitude": 40.49481179333669,
+    "longitude": 22.818276300307883,
+    "category": "Beach",
+    "color": "#b2df8a",
+    "kg": 2040
+  }
+]

@@ -1,4 +1,7 @@
 "use client"
+import { useRef } from 'react'
+import { MapPin } from 'lucide-react';
+import { Icon } from "leaflet";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 import { ResponsiveBar, BarDatum } from '@nivo/bar'
 import { ResponsiveLine, Serie } from '@nivo/line'
@@ -8,6 +11,7 @@ import { Feature, Geometry, GeoJsonProperties } from 'geojson';
 import barData from './bar_data.json'
 import circleData from './circle_data.json'
 import lineData from './line_data.json'
+import leafletData from './leaflet_data.json'
 import mapData from './map_data.json'
 import features from './med.geo.json'
 import 'leaflet/dist/leaflet.css';
@@ -391,24 +395,34 @@ const MediterraneanGeoMap = ({ features, data }: MediterraneanGeoMapProps) => (
   />
 )
 
-const LeafletMap = () => (
-  <MapContainer className='h-full' center={[37.308316, 22.751713]} zoom={5} scrollWheelZoom={true}>
-    <TileLayer
-      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    />
-    <Marker position={[37.986221, 23.567896]}>
-      <Popup>
-        Pireous
-      </Popup>
-    </Marker>
-    <Marker position={[36.590137, 22.379222]}>
-      <Popup>
-      Messiniakos Kolpos
-      </Popup>
-    </Marker>
-  </MapContainer>
-)
+const LeafletMap = () => {
+  const mapRef = useRef(null)
+  const customIcon = new Icon({
+    iconUrl: 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="blue" stroke="blue" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>'),
+    iconSize: [24, 24], // Size of the icon
+    iconAnchor: [12, 24], // Point of the icon which will correspond to marker's location
+    popupAnchor: [0, -24] // Point from which the popup should open relative to the iconAnchor
+  });
+
+  return (
+    <MapContainer className='h-full' center={[38.32217739504656, 23.952204640936014]} zoom={6} scrollWheelZoom={true}>
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      {leafletData.map(location => (
+        <Marker position={[location.latitude, location.longitude]} icon={customIcon}>
+        <Popup>
+          <div>
+            <div>{location.name}</div>
+            <div>{location.category}: {location.kg}kg</div>
+          </div>  
+        </Popup>
+      </Marker>
+      ))}
+    </MapContainer>
+  )
+}
 
 
 
@@ -424,7 +438,7 @@ export default function Home() {
       <article className='h-[400px] w-full my-32 px-16'>
         <HistoricalFundUseLine data={lineData} />
       </article>
-      <article className='h-[400px] w-[900px] m-auto'>
+      <article className='h-[800px] w-[1200px] m-auto'>
         <LeafletMap />
       </article>
 
