@@ -398,7 +398,7 @@ const MediterraneanGeoMap = ({ features, data }: MediterraneanGeoMapProps) => (
 const LeafletMap = () => {
   const mapRef = useRef(null)
   return (
-    <MapContainer className='h-full' center={[38.32217739504656, 23.952204640936014]} zoom={7} scrollWheelZoom={true}>
+    <MapContainer className='h-full z-0' center={[38.32217739504656, 23.952204640936014]} zoom={7} scrollWheelZoom={true}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -428,6 +428,25 @@ const LeafletMap = () => {
   )
 }
 
+const LeafletLegend = () => {
+  const legendData = [
+    { color: '#a6cee3', label: 'Fishing for Litter' },
+    { color: '#1f78b4', label: 'Prevention' },
+    { color: '#33a02c', label: 'Diving' },
+    { color: '#b2df8a', label: 'Beach' },
+  ];
+
+  return (
+    <div className='absolute bottom-0 left-0 z-10 bg-white p-10' >
+      {legendData.map((item, index) => (
+        <div key={index} className='flex gap-1 mb-1'>
+          <div className='h-5 w-5' style={{ backgroundColor: `${item.color }`}}></div>
+          <div>{item.label}</div>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 
 export default function Home() {
@@ -442,8 +461,9 @@ export default function Home() {
       <article className='h-[400px] w-full my-32 px-16'>
         <HistoricalFundUseLine data={lineData} />
       </article>
-      <article className='h-[800px] w-[1200px] m-auto'>
+      <article className='h-[800px] w-[1200px] m-auto relative'>
         <LeafletMap />
+        <LeafletLegend />
       </article>
 
       {/* <article className='h-[800px] w-[800px]'>
