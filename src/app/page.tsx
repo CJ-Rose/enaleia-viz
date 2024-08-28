@@ -2,7 +2,7 @@
 import { useRef } from 'react'
 import { MapPin } from 'lucide-react';
 import { Icon } from "leaflet";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Tooltip, Popup, useMap } from 'react-leaflet'
 import { ResponsiveBar, BarDatum } from '@nivo/bar'
 import { ResponsiveLine, Serie } from '@nivo/line'
 import { ResponsiveCirclePacking } from '@nivo/circle-packing'
@@ -406,13 +406,13 @@ const LeafletMap = () => {
       {leafletData.map(location => {
         const customIcon = new Icon({
           iconUrl: 'data:image/svg+xml,' + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="${location.color}"><circle cx="5" cy="5" r="5"></circle></svg>`),
-          iconSize: [12, 12], 
+          iconSize: [16, 16], 
           // iconAnchor: [5, 5], // Point of the icon which will correspond to marker's location
           // popupAnchor: [0, -5] // Point from which the popup should open relative to the iconAnchor
         });
         return (
           <Marker key={location.name} position={[location.latitude, location.longitude]} icon={customIcon}>
-            <Popup>
+            <Tooltip>
               <div>
                 <div>{location.name}</div>
                 <div className='flex gap-1 items-center'>
@@ -420,7 +420,7 @@ const LeafletMap = () => {
                   <div>{location.category}: {location.kg}kg</div>
                 </div>
               </div>  
-            </Popup>
+            </Tooltip>
           </Marker>
         )
       })}
